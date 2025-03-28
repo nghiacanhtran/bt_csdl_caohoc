@@ -1,0 +1,63 @@
+{
+    "info": {
+        "_postman_id": "12345678-abcd-efgh-ijkl-1234567890ab",
+        "name": "Comment System API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Create User",
+            "request": {
+                "method": "POST",
+                "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                ],
+                "url": {
+                    "raw": "http://localhost:8089/users",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8089",
+                    "path": ["users"]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"username\": \"john_doe\", \"email\": \"john@example.com\"}"
+                }
+            }
+        },
+        {
+            "name": "Create Comment",
+            "request": {
+                "method": "POST",
+                "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                ],
+                "url": {
+                    "raw": "http://localhost:8089/comments",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8089",
+                    "path": ["comments"]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\"userId\": 1, \"text\": \"This is my first comment\"}"
+                }
+            }
+        },
+        {
+            "name": "Get All Comments",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://localhost:8089/comments",
+                    "protocol": "http",
+                    "host": ["localhost"],
+                    "port": "8089",
+                    "path": ["comments"]
+                }
+            }
+        }
+    ]
+}

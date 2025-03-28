@@ -2,10 +2,20 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-CommentManagementApplication<comment-management-system>",
+            "name": "Spring Boot-CommentsDemoApplication<comments_demo>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "com.example.commentmanagement.CommentManagementApplication",
+            "mainClass": "com.demo.hvnh.csdl.bt03.comments_demo.CommentsDemoApplication",
+            "projectName": "comments_demo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CommentsDemoApplication<comment-management-system>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.demo.hvnh.csdl.bt03.comments_demo.CommentsDemoApplication",
             "projectName": "comment-management-system",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
